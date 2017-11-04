@@ -8,21 +8,27 @@ app.use(cookieParser());
 
 app.set('view engine', 'pug');
 
-app.get('/', (req, res) => {
-    res.render('index');
+const mainRoutes = require('./routes');
+const cardRoutes = require('./routes/cards');
+app.use(mainRoutes);
+app.use('/cards', cardRoutes);
+
+app.use((request,res,next)=>{
+  const err = new Error('Oh no!');
+  err.status = 500;
+  next(err);
 });
 
-app.post('/hello', (req, res) => {
-  res.cookie('username', req.body.username);
-  res.render('hello', {name: req.body.username});
+app.use((req, res, next) =>{
+  const err = new Error('Not Found');
+  err.status = 404;
+  next(err);
 });
 
-app.get('/hello', (req, res) => {
-  res.render('hello', { name: req.cookies.username });
-});
-
-app.get('/cards', (req, res) => {
-    res.render('card', {prompt:"When did O Canada become the national anthem?", hint:"It's later than you think..."});
+app.use((err, req, res, next)=>{
+  res.locals.error = err;
+  res.status(err.status);
+  res.render('error');
 });
 
 app.listen(3000, () => {

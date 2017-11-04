@@ -1,0 +1,32 @@
+{
+    "data": {
+        "title": "Canada Facts Flashcards",
+        "cards": [
+            {
+                "question": "This city has the highest number of restaurants per capita in Canada",
+                "hint": "It's in Quebec",
+                "answer": "Montreal"
+            },
+            {
+                "question": "This Brewery in Saint John, N.B., turns out 1,642 bottles of beer per minute",
+                "hint": "Think of antlers",
+                "answer": "The Moosehead Brewery"
+            },
+            {
+                "question": "In 1917, this was the world’s largest man-made explosion prior to Hiroshima",
+                "hint": "On the east coast.",
+                "answer": "The Halifax Explosion"
+            },
+            {
+                "question": "This province didn't join Canada until 1949.",
+                "hint": "It's capital is St. John's",
+                "answer": "Newfoundland and Labrador"
+            },
+            {
+                "question": "This sandwich is exclusively served at Canadian McDonald’s",
+                "hint": "Think seafood...",
+                "answer": "The Mclobster"
+            }
+        ]
+    }
+}
