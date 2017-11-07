@@ -19,14 +19,20 @@
             },
             {
                 "question": "This province didn't join Canada until 1949.",
-                "hint": "It's capital is St. John's",
+                "hint": "Its capital is St. John's",
                 "answer": "Newfoundland and Labrador"
             },
             {
                 "question": "This sandwich is exclusively served at Canadian McDonald’s",
                 "hint": "Think seafood...",
                 "answer": "The Mclobster"
+            },
+            {
+                "question": "Between 1917 and 1921, this was prohibited in British Columbia",
+                "hint": "No drinkypoos...",
+                "answer": "Alcohol"
             }
+            
         ]
     }
 }

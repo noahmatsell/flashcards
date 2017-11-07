@@ -1,6 +1,4 @@
-extends layout.pug
-block content
-  section#content
-    h2 Welcome #{name}, ya hoser!
-    form(action='/goodbye', method='post')
-      button(type='submit') Goodbye
+extends app.pug
+block intro
+  h1.namecard-prompt Let's get goin'!
+  a.namecard-submit(href='/cards') Give 'er
